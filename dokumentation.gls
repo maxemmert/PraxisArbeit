@@ -1,0 +1,6 @@
+\glossarysection[\glossarytoctitle]{\glossarytitle}\glossarypreamble
+\begin{theglossary}\glossaryheader
+\glsgroupheading{M}\relax \glsresetentrylist %
+\glossaryentryfield{Mockup}{\glsnamefont{Mockup}}{Ein Mockup ist ein maßstäbliches Modell, das oft zu Präsentationszwecken oder zur Veranschaulichung genutzt wird.}{\relax }{\glossaryentrynumbers{\relax 
+		\setentrycounter[]{page}\glsnumberformat{11}}}%
+\end{theglossary}\glossarypostamble

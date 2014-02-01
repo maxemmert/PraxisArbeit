@@ -1,0 +1,111 @@
+\input{ads/header}
+
+% Ab jetzt können auch Umlaute verwendet werden
+
+%falls pdftitel = titel der Arbeit
+\newcommand{\titel}{\pdftitel}
+%bei unterschiedlichen Titeln
+%\newcommand{\titel}{In der Regel haben wir einen zweizeiligen
+% Bachelorthesistitel}
+\newcommand{\martrikelnr}{8132098}
+\newcommand{\kurs}{STG-TINF12C}
+\newcommand{\datumAbgabe}{Februar 2014}
+\newcommand{\firma}{Compart AG}
+\newcommand{\firmenort}{Böblingen}
+\newcommand{\abgabeort}{Stuttgart}
+\newcommand{\abschluss}{Bachelor of Engineering}
+\newcommand{\studiengang}{Angewandte Informatik}
+\newcommand{\dhbw}{Stuttgart}
+\newcommand{\betreuer}{Lars Heppler}
+\newcommand{\zeitraum}{12 Wochen}
+\newcommand{\arbeitsart}{\arbeit}
+
+\makeglossaries
+\input{ads/glossary}
+
+\begin{document}
+
+	% Deckblatt
+	\begin{spacing}{1}
+		\input{ads/deckblatt}
+	\end{spacing}
+	\newpage
+
+	\renewcommand{\thepage}{\Roman{page}}
+	\setcounter{page}{1}
+
+	% Sperrvermerk
+	\input{ads/sperrvermerk}
+	\newpage
+	
+	% Erklärung
+	\input{ads/erklaerung}
+	\newpage
+
+	% Abstract
+	\input{ads/abstract}
+	\newpage
+
+	\pagestyle{plain}
+
+	% Inhaltsverzeichnis
+	\begin{spacing}{1.1}
+		\setcounter{tocdepth}{1}
+		%für die Anzeige von Unterkapiteln im Inhaltsverzeichnis
+		%\setcounter{tocdepth}{2}
+		\tableofcontents
+	\end{spacing}
+	\newpage
+
+	\renewcommand{\thepage}{\arabic{page}}
+	\setcounter{page}{1}
+	
+	% Inhalt
+	\input{content/01kapitel}
+	\input{content/02kapitel}
+	\input{content/03kapitel}
+	
+	% Anhang
+	\clearpage
+	\pagenumbering{roman}
+
+	% Abbildungsverzeichnis
+	\cleardoublepage
+	\phantomsection \label{listoffig}
+	\addcontentsline{toc}{chapter}{Abbildungsverzeichnis}
+	\listoffigures
+
+	%Tabellenverzeichnis
+	\cleardoublepage
+	\phantomsection \label{listoftab}
+	\addcontentsline{toc}{chapter}{Tabellenverzeichnis}
+	\listoftables
+
+	% Quellcodeverzeichnis
+	\cleardoublepage
+	\phantomsection \label{listoflist}
+	\addcontentsline{toc}{chapter}{Listings}
+	\lstlistoflistings
+
+	% Literaturverzeichnis
+	\cleardoublepage
+	\phantomsection \label{listoflit}
+	\addcontentsline{toc}{chapter}{Literaturverzeichnis}
+	
+	%Bib style
+	\bibliographystyle{agsm} %Havard
+	%\bibliographystyle{amsplain} %Durchnummeriert
+	%\bibliographystyle{amsalpha} %Kürzel für Autor und Jahr
+	%see more: http://amath.colorado.edu/documentation/LaTeX/reference/faq/bibstyles.pdf
+	
+	\bibliography{ArbeitBib}
+
+	% Abkürzungsverzeichnis
+	\cleardoublepage
+	\phantomsection \label{listofacs}
+	\addcontentsline{toc}{chapter}{Abkürzungsverzeichnis}
+	\input{ads/acronyms}
+	
+	% Glossar
+	\printglossary[style=altlist,title=Glossar]
+\end{document}

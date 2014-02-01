@@ -1,0 +1,19 @@
+\begin{thebibliography}{xx}
+
+\harvarditem{Ebert}{n.d.}{RalfEbert}
+Ebert, R.  \harvardyearleft n.d.\harvardyearright , {\em Eclipse RCP -
+  Entwicklung von Desktop-Anwendungen mit der Eclipse Rich Client}.
+\newblock \url{http://www.ralfebert.de/archive/eclipse_rcp/EclipseRCP.pdf}.
+
+\harvarditem{Kriens}{2008}{Queue}
+Kriens, P.  \harvardyearleft 2008\harvardyearright , How osgi changed my life,
+  Technical report.
+\newblock \url{http://queue.acm.org/detail.cfm?id=1348594}.
+
+\harvarditem{OSGiAlliance}{2012}{OSGi}
+OSGiAlliance  \harvardyearleft 2012\harvardyearright , Osgi service platform
+  specification, Technical report.
+\newblock
+  \url{http://www.osgi.org/Download/File?url=/download/r5/osgi.core-5.0.0.pdf}.
+
+\end{thebibliography}

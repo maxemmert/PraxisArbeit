@@ -1,0 +1,10 @@
+\select@language {ngerman}
+\addvspace {10\p@ }
+\addvspace {10\p@ }
+\contentsline {figure}{\numberline {2.1}{\ignorespaces M\IeC {\"o}gliche Verarbeitungsformate der DocBridge Mill Plus}}{3}{figure.2.1}
+\contentsline {figure}{\numberline {2.2}{\ignorespaces Prozessperspektive}}{5}{figure.2.2}
+\contentsline {figure}{\numberline {2.3}{\ignorespaces Dokumentperspektive}}{5}{figure.2.3}
+\contentsline {figure}{\numberline {2.4}{\ignorespaces OSGi Schichtenmodell \cite [aus S.2]{OSGi}}}{6}{figure.2.4}
+\contentsline {figure}{\numberline {2.5}{\ignorespaces Darstellung von SWT-Widgets auf verschiedenen Betriebssystemen\FN@sf@gobble@optonly }}{7}{figure.2.5}
+\addvspace {10\p@ }
+\contentsline {figure}{\numberline {3.1}{\ignorespaces Verwendung der API CompareUI am Beispiel von eGit}}{15}{figure.3.1}
