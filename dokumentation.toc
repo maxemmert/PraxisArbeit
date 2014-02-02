@@ -9,7 +9,7 @@
 \contentsline {section}{\numberline {2.3}OSGi}{6}{section.2.3}
 \contentsline {section}{\numberline {2.4}OSGi Services}{7}{section.2.4}
 \contentsline {section}{\numberline {2.5}SWT}{7}{section.2.5}
-\contentsline {section}{\numberline {2.6}Eclipse RCP}{8}{section.2.6}
+\contentsline {section}{\numberline {2.6}Eclipse RCP}{7}{section.2.6}
 \contentsline {section}{\numberline {2.7}Target Platform}{8}{section.2.7}
 \contentsline {section}{\numberline {2.8}Plug-in zur Profilkonvertierung}{8}{section.2.8}
 \contentsline {chapter}{\numberline {3}Hauptteil}{10}{chapter.3}
@@ -33,6 +33,7 @@
 \contentsline {section}{\numberline {3.3}Implementierung}{16}{section.3.3}
 \contentsline {subsection}{\numberline {3.3.1}Komponente f\IeC {\"u}r den Profilimport}{16}{subsection.3.3.1}
 \contentsline {subsection}{\numberline {3.3.2}Komponente zur Aktualisierung von Profilen}{16}{subsection.3.3.2}
+\contentsline {section}{\numberline {3.4}Ergebnisse}{16}{section.3.4}
 \contentsline {chapter}{Abbildungsverzeichnis}{i}{section*.25}
 \contentsline {chapter}{Tabellenverzeichnis}{ii}{section*.27}
 \contentsline {chapter}{Listings}{iii}{section*.29}

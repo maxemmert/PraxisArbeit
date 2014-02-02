@@ -4,6 +4,7 @@
 \label{cha:Hauptteil}
 
 \section{Analyse}{
+\label{sec:analyse}
 %In diesem Kapitel wird mit Hilfe von verschiedenen Anwendungsfällen das %Anwendungsszenario dargestellt.
 \subsection{Anwendungsfälle}{
 In diesem Abschnitt werden die verschiedenen Anwendungsfälle für die zu entwickelnde Grafische Oberfläche erläutert.
@@ -50,6 +51,7 @@ Die Erweiterungen der \ac{DBWB} sollen eine Konsistenz in der Benutzerführung a
 }
 
 \section{Konzept}{
+\label{sec:konzept}
 In diesem Abschnitt wird das, dem zu entwickelnden Plug-in zugrundeliegende, Konzept erläutert.
 
 \subsection{Grafische Einbettung}{
@@ -97,6 +99,7 @@ Der nächste Ansatz war es, einen Editor speziell zum Vergleich von zwei Filterp
   \centering
      \includegraphics[height=.7\textwidth]{egit_compare.png}
   \caption{Verwendung der API CompareUI am Beispiel von eGit}
+  \label{fig:egit_compare}
 \end{figure}
 
 }
@@ -113,13 +116,21 @@ Der nächste Ansatz war es, einen Editor speziell zum Vergleich von zwei Filterp
 
 
 \subsection{Design der Bundles}{
+In der Softwareentwicklung ist die Unterteilung der Software in kleinere Einheiten vorteilhaft, da dies den Test, die Wartung und die Entwicklung allgemein vereinfacht.
+
+
+
 
 }
 
 \section{Implementierung}{
+\label{sec:implementierung}
 Dieser Abschnitt beschreibt die Implementierung der Komponenten für den Profilimport und die Aktualisierung der Filterprofile.
 
 \subsection{Komponente für den Profilimport}{
+\label{sec:impl_import}
+
+
 
 
 
@@ -129,18 +140,29 @@ Dieser Abschnitt beschreibt die Implementierung der Komponenten für den Profili
 }
 
 \subsection{Komponente zur Aktualisierung von Profilen}{
+\label{sec:impl_aktualisieren}
+Da der Aufgabenzeitraum für die Analyse, Konzeption und Implementierung beider Komponenten zu knapp bemessen war, konnte die Aktualisierungskomponente nicht vollständig implementiert werden. Es existiert jedoch ein Prototyp, der mit der Technologie CompareUI(Abbildung \ref{fig:egit_compare}), die bereits im \nameref{sec:konzept} erwähnt wird, realisiert wurde. Es wurde eine Standalone Eclipse \ac{RCP}-Anwendung implementiert, die über die Funktionalität verfügt, einen Vergleichseditor mit zwei Profilen zu öffnen. Da bereits ein detailliertes Konzept besteht, dürfte die Implementierung dieser Komponente nicht allzu Zeitaufwendig sein. Vor allem, da Sie sich nicht in großem Maß von der Programmierung der \nameref{sec:impl_import} unterscheidet.    
+
+
+}
+
+
+
+
 
 
 
 }
 
 
-
-
-
+\section{Ergebnisse}{
+\label{sec:ergebnisse}
 
 
 }
+
+
+
 
 }
 
