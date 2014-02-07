@@ -84,16 +84,17 @@ Filterprofile werden in der \ac{DBWB} in einem Profile Repository verwaltet. Fü
 \subsubsection{Komponente zur Aktualisierung von Profilen}{
 Bei der Aktualisierung von Profilen soll ein bereits vorhandenes Plug-in verwendet werden, das die Funktionalität der Konvertierung von Profilen zur Verfügung stellt. Geplant ist, dass für jeden Filtertyp ein eigenes Plug-in erstellt wird. Diese werden bei Bedarf eingebunden. Wie auch bei der Importkomponente soll sich die Aktualisierungskomponente in den bestehenden Arbeitsfluss integrieren. Ist ein Filterprofil in einem Editor ausgewählt, hat der Anwender verschiedene Möglichkeiten den Konvertierungsprozess anzustoßen. Neben einem Eintrag im Hauptmenü soll die Aktion auch über eine Toolbar und ein Kontextmenü verfügbar sein. Nach starten des Prozesses über eine der genannten Möglichkeiten wird das aktuell geöffnete Profil ermittelt. Anhand des root-Tags\footnote{Hauptelement in der Profildatei} wird der Filtertyp(z.B. \ac{AFP},\ac{PDF}) ermittelt. Anhand dieses Filtertyps wird das benötigte Konvertierungs-Plug-in festgestellt und dessen convert-Methode mit dem ausgewählten Profil als Übergabeparameter gestartet. Sobald die Konvertierung abgeschlossen ist, wird dem Anwender das originale und das generierte Profil angezeigt, um weitere Modifikationen vornehmen zu können. Zur Vergleichsanzeige der Dateien wurden folgende Ansätze untersucht.
 
-\textbf{Erweiterung des Dokumenteneditors}{
+\textbf{Erweiterung des Dokumenteneditors}{\\
 Der Editor der \ac{DBWB} ermöglicht es, eine Vorschau von zu konvertierenden Dokumenten anzuzeigen. Ist beispielsweise ein Dokument im \ac{AFP}-Format gegeben und soll nach \ac{PDF} konvertiert werden, so lässt sich das Ergebnis in einem Editor bereits zur Laufzeit betrachten. Geplant war das Überschreiben dieses Editors mit einem Standard XML-Editor. Dieser Ansatz musste verworfen werden, da dies im konzeptionellen Widerspruch zum Dokumenteneditor stand.
 }
 
-\textbf{Erstellen eines eigenen Editors}{
+\textbf{Erstellen eines spezialisierten Editors}{\\
 Der nächste Ansatz war es, einen Editor speziell zum Vergleich von zwei Filterprofildateien zu entwickeln. Ein EditorPart soll zwei weitere EditorParts enthalten, in denen das originale und das konvertierte Profil angezeigt werden. Eclipse \ac{RCP} sieht jedoch vor, dass ein Editor in Beziehung zu genau einer Datei steht. Deshalb musste dieser Ansatz ebenfalls verworfen werden. 
 }
 
 \textbf{Nutzung von CompareUI\footnote{Java \ac{API}
- um Vergleich von Objekten}}{Die Java \ac{API} CompareUI bietet einen Einstiegspunkt, um konfigurierbare Vergleichsoperationen auf beliebige Ressourcen durchzuführen. Das Ergebnis eines Vergleichs kann in einem speziellen Vergleichseditor geöffnet werden. Dieser Editor ermöglicht das dynamische Vergleichen einzelner Elemente von Dokumenten, was besonders am Beispiel von \ac{XML} oder \ac{HTML} ersichtlich wird. Auch das Eclipse Plug-in eGit\footnote{Plug-in zur grafischen Bedienung der Versionierungssoftware Git} nutzt die CompareUI, um Dateien in der Versionierungshistorie zu vergleichen. Da die Vorteile dieser Technologie nicht von der Hand zu weisen sind, wird dieser Ansatz zur Entwicklung zur Darstellung des Ergebnisses des Konvertierungs-Plug-ins gewählt.
+ um Vergleich von Objekten}}{\\
+ Die Java \ac{API} CompareUI bietet einen Einstiegspunkt, um konfigurierbare Vergleichsoperationen auf beliebige Ressourcen durchzuführen. Das Ergebnis eines Vergleichs kann in einem speziellen Vergleichseditor geöffnet werden. Dieser Editor ermöglicht das dynamische Vergleichen einzelner Elemente von Dokumenten, was besonders am Beispiel von \ac{XML} oder \ac{HTML} ersichtlich wird. Auch das Eclipse Plug-in eGit\footnote{Plug-in zur grafischen Bedienung der Versionierungssoftware Git} nutzt die CompareUI, um Dateien in der Versionierungshistorie zu vergleichen. Da die Vorteile dieser Technologie nicht von der Hand zu weisen sind, wird dieser Ansatz zur Entwicklung zur Darstellung des Ergebnisses des Konvertierungs-Plug-ins gewählt.
 
 \begin{figure}[htbp] 
   \centering
@@ -127,9 +128,41 @@ In der Softwareentwicklung ist die Unterteilung der Software in kleinere Einheit
 \label{sec:implementierung}
 Dieser Abschnitt beschreibt die Implementierung der Komponenten für den Profilimport und die Aktualisierung der Filterprofile.
 
+\subsection{Entwicklungsumgebung}{
+Die Implementierung der Bundles erfolgt in der \ac{IDE} Eclipse\footnote{Version Kepler}. Da \ac{RCP} auf dem Eclipse-Framework basiert, liegt die Wahl dieser \ac{IDE} nahe. Für das Konfigurationsmanagement wird das Build-Management-Tool Apache Maven 2 verwendet. Als Laufzeitumgebung wird die \ac{JRE}6 verwenden, da diese auch bei den bestehenden Bundles im Entwicklungsumfeld zum Einsatz kommt.
+}
+
+
+
+
 \subsection{Komponente für den Profilimport}{
 \label{sec:impl_import}
 
+\subsubsection{Extensions}{
+Unter Verwendung des Extension-Point-Mechanismus von Eclipse \ac{RCP} wurden in der Plugin.xml des Bundles verschiedene Extensions angelegt.
+\\
+\textbf{Grafische Steuerelemente}\\
+Für das ergänzen der Benutzeroberfläche der \ac {DBWB} wird der Extension-Point org.eclipse.ui.menu verwendet. Sowohl in der Toolbar der \ac{DBWB} als auch in ihrer Menüleiste werden Buttons bzw Menüeinträge hinzugefügt. Das aktivieren eines solchen Menüeintrags oder Buttons startet den in "REF" beschriebenen Handler. Listing \ref{lst:extension} zeigt den Einsatz einer Extension, um eine neue Menükontribution anzulegen.
+
+\textbf{Handler}{
+\\
+Neben den Extensions für die grafischen Steuerelemente wird eine Extension am Extension-Point org.eclipse.ui.handlers registriert. Dieser ImportHandler ist aktiv, falls in der Prozessperspektive ein Projekt selektiert ist, oder der Nutzer sich in der Dokumentenperspektive befindet.("REF") 
+}
+
+ \begin{lstlisting}[caption={Toolbar Extension},label=lst:extension]
+ 
+ /**
+  * This is a doc comment.
+  */
+ // extension beispiel code
+ \end{lstlisting}
+
+
+}
+
+\subsubsection{Implementierte Klassen}{
+
+}
 
 
 
@@ -148,7 +181,9 @@ Da der Aufgabenzeitraum für die Analyse, Konzeption und Implementierung beider 
 
 
 
+\subsubsection{Verwendete Bibliotheken}{
 
+}
 
 
 

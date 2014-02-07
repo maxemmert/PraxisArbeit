@@ -59,6 +59,12 @@
 \usepackage{color}
 \definecolor{LinkColor}{rgb}{0,0,0.2}
 \definecolor{ListingBackground}{rgb}{0.92,0.92,0.92}
+\definecolor{pblue}{rgb}{0.13,0.13,1}
+\definecolor{pgreen}{rgb}{0,0.5,0}
+\definecolor{pred}{rgb}{0.9,0,0}
+\definecolor{pgrey}{rgb}{0.46,0.45,0.48}
+
+
 
 \newcommand{\pdftitel}{Grafische Einbindung von Plug-ins im Eclipse Rich Client Platform Umfeld}
 \newcommand{\autor}{Max Emmert}
@@ -101,6 +107,16 @@
 %\usepackage{libertine}
 \usepackage{palatino} 
 
+\definecolor{dkgreen}{rgb}{0,0.6,0}
+\definecolor{gray}{rgb}{0.5,0.5,0.5}
+\definecolor{mauve}{rgb}{0.58,0,0.82}
+ \definecolor{middlegray}{rgb}{0.5,0.5,0.5}
+ \definecolor{lightgray}{rgb}{0.9,0.9,0.9}
+ \definecolor{orange}{rgb}{0.8,0.3,0.3}
+ \definecolor{yac}{rgb}{0.6,0.6,0.1}
+
+
+
 % Hurenkinder und Schusterjungen verhindern
 % http://projekte.dante.de/DanteFAQ/Silbentrennung
 \clubpenalty=10000
@@ -110,22 +126,23 @@
 % Quellcode
 \usepackage{listings}
 \lstloadlanguages{Java}
-\lstset{%
-	language=Java,		 	 % Sprache des Quellcodes
-	%numbers=left,           % Zelennummern links
-	stepnumber=1,            % Jede Zeile nummerieren.
-	numbersep=5pt,           % 5pt Abstand zum Quellcode
-	numberstyle=\tiny,       % Zeichengrösse 'tiny' für die Nummern.
-	breaklines=true,         % Zeilen umbrechen wenn notwendig.
-	breakautoindent=true,    % Nach dem Zeilenumbruch Zeile einrücken.
-	postbreak=\space,        % Bei Leerzeichen umbrechen.
-	tabsize=2,               % Tabulatorgrösse 2
-	basicstyle=\ttfamily\footnotesize, % Nichtproportionale Schrift, klein für den Quellcode
-	showspaces=false,        % Leerzeichen nicht anzeigen.
-	showstringspaces=false,  % Leerzeichen auch in Strings ('') nicht anzeigen.
-	extendedchars=true,      % Alle Zeichen vom Latin1 Zeichensatz anzeigen.
-	captionpos=b,            % sets the caption-position to bottom
-	backgroundcolor=\color{ListingBackground} % Hintergrundfarbe des Quellcodes setzen.
+
+\lstset{language=Java,
+  backgroundcolor=\color{lightgray},
+  numbers=left,
+  stepnumber=1,
+  xleftmargin=15pt,
+  showspaces=false,
+  showtabs=false,
+  breaklines=true,
+  showstringspaces=false,
+  breakatwhitespace=true,
+  commentstyle=\color{pgreen},
+  keywordstyle=\color{pblue},
+  stringstyle=\color{pred},
+  basicstyle=\ttfamily,
+  moredelim=[il][\textcolor{pgrey}]{$$},
+  moredelim=[is][\textcolor{pgrey}]{\%\%}{\%\%}
 }
 
 % Glossar
