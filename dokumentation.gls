@@ -1,6 +1,9 @@
 \glossarysection[\glossarytoctitle]{\glossarytitle}\glossarypreamble
 \begin{theglossary}\glossaryheader
 \glsgroupheading{M}\relax \glsresetentrylist %
-\glossaryentryfield{Mockup}{\glsnamefont{Mockup}}{Ein Mockup ist ein maßstäbliches Modell, das oft zu Präsentationszwecken oder zur Veranschaulichung genutzt wird.}{\relax }{\glossaryentrynumbers{\relax 
-		\setentrycounter[]{page}\glsnumberformat{11}}}%
+\glossaryentryfield{Mockup}{\glsnamefont{Mockup}}{Ein Mockup ist ein maßstäbliches Modell, das oft zu Präsentationszwecken oder zur Veranschaulichung genutzt wird}{\relax }{\glossaryentrynumbers{\relax 
+		\setentrycounter[]{page}\glsnumberformat{12}}}\glsgroupskip
+\glsgroupheading{T}\relax \glsresetentrylist %
+\glossaryentryfield{Toolbar}{\glsnamefont{Toolbar}}{Eine Toolbar (Statusleiste) ist eine waagerechte oder senkrechte Leiste mit kleinen, häufig bebilderten Schaltflächen, die als erweiternde Elemente der Menüführung von Programmen mit grafischer Benutzeroberfläche dienen}{\relax }{\glossaryentrynumbers{\relax 
+		\setentrycounter[]{page}\glsnumberformat{14}}}%
 \end{theglossary}\glossarypostamble
