@@ -1,9 +1,16 @@
 \begin{thebibliography}{xx}
 
-\harvarditem{Ebert}{n.d.}{RalfEbert}
-Ebert, R.  \harvardyearleft n.d.\harvardyearright , {\em Eclipse RCP -
+\harvarditem{Daum}{2007}{BertholdDaum}
+Daum, B.  \harvardyearleft 2007\harvardyearright , {\em Rich-Client-Entwicklung
+  mit Eclipse 3.3. - Anwendungen, Plugins und Rich Clients}.
+
+\harvarditem{Ebert}{2004}{RalfEbert}
+Ebert, R.  \harvardyearleft 2004\harvardyearright , {\em Eclipse RCP -
   Entwicklung von Desktop-Anwendungen mit der Eclipse Rich Client}.
 \newblock \url{http://www.ralfebert.de/archive/eclipse_rcp/EclipseRCP.pdf}.
+
+\harvarditem{{\em Eclipse Magazin 3.10}}{2010}{eclipse_magazin}
+{\em Eclipse Magazin 3.10}  \harvardyearleft 2010\harvardyearright .
 
 \harvarditem{Kriens}{2008}{Queue}
 Kriens, P.  \harvardyearleft 2008\harvardyearright , How osgi changed my life,
@@ -15,5 +22,19 @@ OSGiAlliance  \harvardyearleft 2012\harvardyearright , Osgi service platform
   specification, Technical report.
 \newblock
   \url{http://www.osgi.org/Download/File?url=/download/r5/osgi.core-5.0.0.pdf}.
+
+\harvarditem{Popp}{2013}{maven_popp}
+Popp, G.  \harvardyearleft 2013\harvardyearright , {\em
+  Konfigurationsmanagement mit Subversion, Maven und Redmine: Grundlagen für
+  Softwarearchitekten und Entwickler}, dpunkt.verlag GmbH; Auflage: 4.
+
+\harvarditem{Reichert}{2009}{rcp_unternehmenseinsatz}
+Reichert, S.  \harvardyearleft 2009\harvardyearright , {\em Eclipse RCP im
+  Unternehmenseinsatz: Verteilte Anwendungen entwerfen, entwickeln, testen und
+  betreiben}, dpunkt Verlag; Auflage: 1.
+
+\harvarditem{Steve~Northover}{2004}{SWT}
+Steve~Northover, M.~W.  \harvardyearleft 2004\harvardyearright , {\em SWT: The
+  Standard Widget Toolkit, Volume 1}, Addison-Wesley Professional.
 
 \end{thebibliography}

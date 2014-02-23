@@ -1,7 +1,15 @@
 This is BibTeX, Version 0.99dThe top-level auxiliary file: dokumentation.aux
 The style file: agsm.bst
 Database file #1: ArbeitBib.bib
+I was expecting a `,' or a `}'---line 33 of file ArbeitBib.bib
+ : 
+ : publisher = {Dpunkt.Verlag GmbH, 2004}
+(Error may have been on previous line)
+I'm skipping whatever remains of this entry
+Warning--entry type for "eclipse_magazin" isn't style-file defined
+--line 59 of file ArbeitBib.bib
+Warning--empty publisher in BertholdDaum
 Warning--empty publisher in RalfEbert
 Warning--empty institution in Queue
 Warning--empty institution in OSGi
-(There were 3 warnings)
+(There was 1 error message)

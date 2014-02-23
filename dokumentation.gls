@@ -1,9 +1,27 @@
 \glossarysection[\glossarytoctitle]{\glossarytitle}\glossarypreamble
 \begin{theglossary}\glossaryheader
+\glsgroupheading{F}\relax \glsresetentrylist %
+\glossaryentryfield{Framework}{\glsnamefont{Framework}}{Programmiergerüst, das in der Softwaretechnik im Rahmen der objektorientierten Softwareentwicklung sowie bei komponentenbasierten Entwicklungsansätzen verwendet wird}{\relax }{\glossaryentrynumbers{\relax 
+		\setentrycounter[]{page}\glsnumberformat{28}}}\glsgroupskip
+\glsgroupheading{L}\relax \glsresetentrylist %
+\glossaryentryfield{Logging}{\glsnamefont{Logging}}{(Automatische) Speicherung von Prozessen und Datenänderungen}{\relax }{\glossaryentrynumbers{\relax 
+		\setentrycounter[]{page}\glsnumberformat{25}}}\glsgroupskip
 \glsgroupheading{M}\relax \glsresetentrylist %
 \glossaryentryfield{Mockup}{\glsnamefont{Mockup}}{Ein Mockup ist ein maßstäbliches Modell, das oft zu Präsentationszwecken oder zur Veranschaulichung genutzt wird}{\relax }{\glossaryentrynumbers{\relax 
-		\setentrycounter[]{page}\glsnumberformat{12}}}\glsgroupskip
+		\setentrycounter[]{page}\glsnumberformat{14}}}\glsgroupskip
+\glsgroupheading{P}\relax \glsresetentrylist %
+\glossaryentryfield{Plug-in}{\glsnamefont{Plug-in}}{Erweiterungsmodul, das von einer Software während ihrer Laufzeit erkannt und angeschlossen werden kann. Mit Plug-ins werden Applikationen um zusätzliche Funktionalitäten erweitert}{\relax }{\glossaryentrynumbers{\relax 
+		\setentrycounter[]{page}\glsnumberformat{10}}}\glsgroupskip
+\glsgroupheading{R}\relax \glsresetentrylist %
+\glossaryentryfield{Repository}{\glsnamefont{Repository}}{Verwaltetes Verzeichnis zur Speicherung und Beschreibung von digitalen Objekten (oft genutzt im Zusammenhang mit Versionsverwaltung)}{\relax }{\glossaryentrynumbers{\relax 
+		\setentrycounter[]{page}\glsnumberformat{19}}}\glsgroupskip
+\glsgroupheading{S}\relax \glsresetentrylist %
+\glossaryentryfield{String}{\glsnamefont{String}}{Ein String ist eine Zeichenkette bzw. eine Folge von Zeichen aus einem definierten Zeichensatz}{\relax }{\glossaryentrynumbers{\relax 
+		\setentrycounter[]{page}\glsnumberformat{23}}}\glsgroupskip
 \glsgroupheading{T}\relax \glsresetentrylist %
 \glossaryentryfield{Toolbar}{\glsnamefont{Toolbar}}{Eine Toolbar (Statusleiste) ist eine waagerechte oder senkrechte Leiste mit kleinen, häufig bebilderten Schaltflächen, die als erweiternde Elemente der Menüführung von Programmen mit grafischer Benutzeroberfläche dienen}{\relax }{\glossaryentrynumbers{\relax 
-		\setentrycounter[]{page}\glsnumberformat{14}}}%
+		\setentrycounter[]{page}\glsnumberformat{16}}}\glsgroupskip
+\glsgroupheading{V}\relax \glsresetentrylist %
+\glossaryentryfield{Versionsverwaltung}{\glsnamefont{Versionsverwaltung}}{System, das zur Erfassung von Änderungen an Dokumenten oder Dateien verwendet wird. Alle Versionen werden in einem Archiv oder Repository abgelegt, um ungewollte Datenverluste zu vermeiden}{\relax }{\glossaryentrynumbers{\relax 
+		\setentrycounter[]{page}\glsnumberformat{19}}}%
 \end{theglossary}\glossarypostamble
